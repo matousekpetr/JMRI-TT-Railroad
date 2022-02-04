@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<auxiliary-configuration xmlns="http://www.netbeans.org/ns/auxiliary-configuration/1">
+    <windowDetails xmlns="http://jmri.org/xml/schema/auxiliary-configuration/window-details-4-3-5.xsd">
+        <window xmlns="" class="jmri.jmrit.display.controlPanelEditor.ControlPanelEditor:Ovladaci panel" height="1056.0" locX="-8.0" locY="-8.0" width="1936.0"/>
+        <window xmlns="" class="jmri.jmrit.roster.Roster"/>
+        <window xmlns="" class="jmri.jmrit.display.controlPanelEditor.ControlPanelEditor:JOP" height="1056.0" locX="-8.0" locY="-8.0" width="1936.0"/>
+        <window xmlns="" class="jmri.jmrit.withrottle.UserInterface" height="270.0" locX="0.0" locY="0.0" width="400.0"/>
+        <window xmlns="" class="PanelPro" height="264.0" locX="674.0" locY="408.0" width="572.0"/>
+    </windowDetails>
+</auxiliary-configuration>

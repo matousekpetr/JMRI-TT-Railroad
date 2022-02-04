@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/xml/XSLT/locomotive.xsl" type="text/xsl"?>
+<locomotive-config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://jmri.org/xml/schema/locomotive-config.xsd">
+  <!--Written by JMRI version 4.20+Rc7ba8249b on Sat Aug 22 21:25:01 CEST 2020-->
+  <locomotive id="Bardotka" fileName="Bardotka_2.xml" roadNumber="T478.1" roadName="České dráhy" mfg="Kuehn 33410" owner="Radoslav" model="" dccAddress="10" comment="" maxSpeed="100" imageFilePath="preference:roster/Bardotka T478.1 (Kuehn 33410).jpg" iconFilePath="preference:roster/Bardotka T478.1 (Kuehn 33410).jpg" URL="" IsShuntingOn="">
+    <dateUpdated>2020-08-22T19:25:01.288+0000</dateUpdated>
+    <decoder model="N45" family="NMRA-DCC/Motorola" comment="" />
+    <locoaddress>
+      <dcclocoaddress number="10" longaddress="no" />
+      <number>10</number>
+      <protocol>dcc_short</protocol>
+    </locoaddress>
+    <functionlabels />
+    <soundlabels />
+    <values>
+      <decoderDef>
+        <varValue item="Verze dekodéru: " value="35" />
+        <varValue item="ID výrobce: " value="157" />
+        <varValue item="Frekvence řízení motoru" value="0" />
+        <varValue item="Konfigurace brždění (asymetrický DCC)" value="0" />
+        <varValue item="Konfigurace brždění (Polarita DC)" value="1" />
+        <varValue item="RailCom kanál 1 (adresa)" value="1" />
+        <varValue item="RailCom kanál 2 (data)" value="1" />
+        <varValue item="Efekty pro výstup A (bílá)" value="0" />
+        <varValue item="Chování výstupu A (bílá) - přední světlo" value="0" />
+        <varValue item="Efekty pro výstup B (žlutá)" value="0" />
+        <varValue item="Chování výstupu B (žlutá) - zadní světlo" value="0" />
+        <varValue item="Efekty pro výstup C (zelená)" value="0" />
+        <varValue item="Chování výstupu C (zelená)" value="0" />
+        <varValue item="Efekty pro výstup D (fialová)" value="0" />
+        <varValue item="Chování výstupu D (fialová)" value="0" />
+        <varValue item="Efekty pro výstup E (ploška)" value="0" />
+        <varValue item="Chování výstupu E" value="0" />
+        <varValue item="Efekty pro výstup F (ploška)" value="0" />
+        <varValue item="Chování výstupu F" value="0" />
+        <varValue item="Složka I" value="2" />
+        <varValue item="Složka P" value="16" />
+        <varValue item="Doba periody efektů/snížení výstupu" value="0" />
+        <varValue item="EMF dělič" value="0" />
+        <varValue item="BEMF kompenzace zátěže" value="1" />
+        <varValue item="SUSI režim" value="1" />
+        <varValue item="Výstup A zapnut při posunu" value="0" />
+        <varValue item="Výstup B zapnut při posunu" value="0" />
+        <varValue item="Výstup C zapnut při posunu" value="0" />
+        <varValue item="Výstup D zapnut při posunu" value="0" />
+        <varValue item="Výstup E zapnut při posunu" value="0" />
+        <varValue item="Výstup F zapnut při posunu" value="0" />
+        <varValue item="Výstup zapnut pokud je F0 zapnuto" value="0" />
+        <varValue item="F1 řídí výstup 2" value="0" />
+        <varValue item="F2 řídí výstup 2" value="0" />
+        <varValue item="F3 řídí výstup 2" value="0" />
+        <varValue item="F4 řídí výstup 2" value="1" />
+        <varValue item="F5 řídí výstup 2" value="0" />
+        <varValue item="F6 řídí výstup 2" value="0" />
+        <varValue item="F7 řídí výstup 2" value="1" />
+        <varValue item="F8 řídí výstup 2" value="0" />
+        <varValue item="F1 řídí výstup 3" value="0" />
+        <varValue item="F2 řídí výstup 3" value="0" />
+        <varValue item="F3 řídí výstup 3" value="0" />
+        <varValue item="F4 řídí výstup 3" value="0" />
+        <varValue item="Hodnota ztlumení výstup B / výstup A" value="0" />
+        <varValue item="Hodnota ztlumení výstup D / výstup C" value="0" />
+        <varValue item="Hodnota ztlumení výstup F / výstup E" value="0" />
+        <varValue item="Rozpojovač" value="48" />
+        <varValue item="Deaktivace krátkodobé paměti" value="0" />
+        <varValue item="Frekvence náhodného generátoru" value="0" />
+        <varValue item="Práh asymetrie" value="3" />
+        <varValue item="Doba odstoupení" value="0" />
+        <varValue item="Rychlost odstoupení" value="0" />
+        <varValue item="Rychlost v analogovém režimu" value="0" />
+        <varValue item="Podverze" value="5" />
+        <varValue item="Základní adresa" value="10" />
+        <varValue item="Rozšířená adresa" value="0" />
+        <varValue item="Typ adresy" value="0" />
+        <varValue item="Korekce rychlosti vzad" value="0" />
+        <varValue item="Uživatel ID #1 (0-255)" value="0" />
+        <varValue item="Uživatel ID #2 (0-255)" value="0" />
+        <varValue item="Směr lokomotivy v soupravě" value="0" />
+        <varValue item="Adresa soupravy" value="0" />
+        <varValue item="Směr lokomotivy" value="0" />
+        <varValue item="Rychlostních kroků" value="1" />
+        <varValue item="Konverze napájení" value="0" />
+        <varValue item="Použití rychlostní tabulky" value="0" />
+        <varValue item="Zpřístupnit RailCom" value="1" />
+        <varValue item="Zrychlení" value="20" />
+        <varValue item="Zpomalení" value="15" />
+        <varValue item="Stav funkce v analogovém režimu - F1" value="0" />
+        <varValue item="Stav funkce v analogovém režimu - F2" value="0" />
+        <varValue item="Stav funkce v analogovém režimu - F3" value="0" />
+        <varValue item="Stav funkce v analogovém režimu - F4" value="0" />
+        <varValue item="Stav funkce v analogovém režimu - F5" value="0" />
+        <varValue item="Stav funkce v analogovém režimu - F6" value="0" />
+        <varValue item="Stav funkce v analogovém režimu - F7" value="0" />
+        <varValue item="Stav funkce v analogovém režimu - F8" value="0" />
+        <varValue item="Stav funkce v analogovém režimu - F9" value="0" />
+        <varValue item="Stav funkce v analogovém režimu - F10" value="0" />
+        <varValue item="Stav funkce v analogovém režimu - F11" value="0" />
+        <varValue item="Stav funkce v analogovém režimu - F12" value="0" />
+        <varValue item="F0 vpřed funkční výstup A" value="1" />
+        <varValue item="F0 vpřed funkční výstup B" value="0" />
+        <varValue item="F0 vpřed funkční výstup C" value="0" />
+        <varValue item="F0 vpřed funkční výstup D" value="0" />
+        <varValue item="F0 vpřed funkční výstup E" value="0" />
+        <varValue item="F0 vpřed funkční výstup F" value="0" />
+        <varValue item="F0 vzad funkční výstup A" value="0" />
+        <varValue item="F0 vzad funkční výstup B" value="1" />
+        <varValue item="F0 vzad funkční výstup C" value="0" />
+        <varValue item="F0 vzad funkční výstup D" value="0" />
+        <varValue item="F0 vzad funkční výstup F" value="0" />
+        <varValue item="F0 vzad funkční výstup F" value="0" />
+        <varValue item="F1 funkční výstup A" value="0" />
+        <varValue item="F1 funkční výstup B" value="0" />
+        <varValue item="F1 funkční výstup C" value="1" />
+        <varValue item="F1 funkční výstup D" value="0" />
+        <varValue item="F1 funkční výstup E" value="0" />
+        <varValue item="F1 funkční výstup F" value="0" />
+        <varValue item="F2 funkční výstup A" value="0" />
+        <varValue item="F2 funkční výstup B" value="0" />
+        <varValue item="F2 funkční výstup C" value="0" />
+        <varValue item="F2 funkční výstup D" value="1" />
+        <varValue item="F2 funkční výstup E" value="0" />
+        <varValue item="F2 funkční výstup F" value="0" />
+        <varValue item="F3 funkční výstup A" value="0" />
+        <varValue item="F3 funkční výstup B" value="0" />
+        <varValue item="F3 funkční výstup C" value="0" />
+        <varValue item="F3 funkční výstup D" value="0" />
+        <varValue item="F3 funkční výstup E" value="0" />
+        <varValue item="F3 funkční výstup F" value="0" />
+        <varValue item="F4 funkční výstup A" value="0" />
+        <varValue item="F4 funkční výstup B" value="0" />
+        <varValue item="F4 funkční výstup C" value="0" />
+        <varValue item="F4 funkční výstup D" value="0" />
+        <varValue item="F4 funkční výstup E" value="0" />
+        <varValue item="F4 funkční výstup F" value="0" />
+        <varValue item="F5 funkční výstup A" value="0" />
+        <varValue item="F5 funkční výstup B" value="0" />
+        <varValue item="F5 funkční výstup C" value="0" />
+        <varValue item="F5 funkční výstup D" value="0" />
+        <varValue item="F5 funkční výstup E" value="1" />
+        <varValue item="F5 funkční výstup F" value="0" />
+        <varValue item="F6 funkční výstup A" value="0" />
+        <varValue item="F6 funkční výstup B" value="0" />
+        <varValue item="F6 funkční výstup C" value="0" />
+        <varValue item="F6 funkční výstup D" value="0" />
+        <varValue item="F6 funkční výstup E" value="0" />
+        <varValue item="F6 funkční výstup F" value="1" />
+        <varValue item="F7 funkční výstup A" value="0" />
+        <varValue item="F7 funkční výstup B" value="0" />
+        <varValue item="F7 funkční výstup C" value="0" />
+        <varValue item="F7 funkční výstup D" value="0" />
+        <varValue item="F7 funkční výstup E" value="0" />
+        <varValue item="F7 funkční výstup F" value="0" />
+        <varValue item="F8 funkční výstup A" value="0" />
+        <varValue item="F8 funkční výstup B" value="0" />
+        <varValue item="F8 funkční výstup C" value="0" />
+        <varValue item="F8 funkční výstup D" value="0" />
+        <varValue item="F8 funkční výstup E" value="0" />
+        <varValue item="F8 funkční výstup F" value="0" />
+        <varValue item="F9 funkční výstup A" value="0" />
+        <varValue item="F9 funkční výstup B" value="0" />
+        <varValue item="F9 funkční výstup C" value="0" />
+        <varValue item="F9 funkční výstup D" value="0" />
+        <varValue item="F9 funkční výstup E" value="0" />
+        <varValue item="F9 funkční výstup F" value="0" />
+        <varValue item="F10 funkční výstup A" value="0" />
+        <varValue item="F10 funkční výstup B" value="0" />
+        <varValue item="F10 funkční výstup C" value="0" />
+        <varValue item="F10 funkční výstup D" value="0" />
+        <varValue item="F10 funkční výstup E" value="0" />
+        <varValue item="F10 funkční výstup F" value="0" />
+        <varValue item="F11 funkční výstup A" value="0" />
+        <varValue item="F11 funkční výstup B" value="0" />
+        <varValue item="F11 funkční výstup C" value="0" />
+        <varValue item="F11 funkční výstup D" value="0" />
+        <varValue item="F11 funkční výstup E" value="0" />
+        <varValue item="F11 funkční výstup F" value="0" />
+        <varValue item="F12 funkční výstup A" value="0" />
+        <varValue item="F12 funkční výstup B" value="0" />
+        <varValue item="F12 funkční výstup C" value="0" />
+        <varValue item="F12 funkční výstup D" value="0" />
+        <varValue item="F12 funkční výstup E" value="0" />
+        <varValue item="F12 funkční výstup F" value="0" />
+        <varValue item="Rozjezdové napětí" value="1" />
+        <varValue item="Maximální napětí" value="140" />
+        <varValue item="Střední napětí" value="70" />
+        <varValue item="Rychlostní tabulka" value="29,38,47,57,66,75,85,94,104,113,122,132,141,150,160,169,179,188,197,207,216,225,235,235,235,235,235,235" />
+      </decoderDef>
+      <CVvalue name="7" value="35" />
+      <CVvalue name="8" value="157" />
+      <CVvalue name="9" value="0" />
+      <CVvalue name="27" value="16" />
+      <CVvalue name="28" value="3" />
+      <CVvalue name="49" value="0" />
+      <CVvalue name="50" value="0" />
+      <CVvalue name="51" value="0" />
+      <CVvalue name="52" value="0" />
+      <CVvalue name="47" value="0" />
+      <CVvalue name="48" value="0" />
+      <CVvalue name="53" value="2" />
+      <CVvalue name="54" value="16" />
+      <CVvalue name="55" value="0" />
+      <CVvalue name="56" value="2" />
+      <CVvalue name="57" value="0" />
+      <CVvalue name="58" value="72" />
+      <CVvalue name="59" value="0" />
+      <CVvalue name="60" value="0" />
+      <CVvalue name="61" value="0" />
+      <CVvalue name="62" value="0" />
+      <CVvalue name="63" value="48" />
+      <CVvalue name="112" value="0" />
+      <CVvalue name="113" value="0" />
+      <CVvalue name="115" value="3" />
+      <CVvalue name="123" value="0" />
+      <CVvalue name="124" value="0" />
+      <CVvalue name="126" value="0" />
+      <CVvalue name="127" value="5" />
+      <CVvalue name="1" value="10" />
+      <CVvalue name="17" value="192" />
+      <CVvalue name="18" value="0" />
+      <CVvalue name="29" value="10" />
+      <CVvalue name="95" value="0" />
+      <CVvalue name="105" value="0" />
+      <CVvalue name="106" value="0" />
+      <CVvalue name="19" value="0" />
+      <CVvalue name="3" value="20" />
+      <CVvalue name="4" value="15" />
+      <CVvalue name="13" value="0" />
+      <CVvalue name="14" value="0" />
+      <CVvalue name="33" value="1" />
+      <CVvalue name="34" value="2" />
+      <CVvalue name="35" value="4" />
+      <CVvalue name="36" value="8" />
+      <CVvalue name="37" value="0" />
+      <CVvalue name="38" value="0" />
+      <CVvalue name="39" value="2" />
+      <CVvalue name="40" value="4" />
+      <CVvalue name="41" value="0" />
+      <CVvalue name="42" value="0" />
+      <CVvalue name="43" value="0" />
+      <CVvalue name="44" value="0" />
+      <CVvalue name="45" value="0" />
+      <CVvalue name="46" value="0" />
+      <CVvalue name="2" value="1" />
+      <CVvalue name="5" value="140" />
+      <CVvalue name="6" value="70" />
+      <CVvalue name="67" value="29" />
+      <CVvalue name="68" value="38" />
+      <CVvalue name="69" value="47" />
+      <CVvalue name="70" value="57" />
+      <CVvalue name="71" value="66" />
+      <CVvalue name="72" value="75" />
+      <CVvalue name="73" value="85" />
+      <CVvalue name="74" value="94" />
+      <CVvalue name="75" value="104" />
+      <CVvalue name="76" value="113" />
+      <CVvalue name="77" value="122" />
+      <CVvalue name="78" value="132" />
+      <CVvalue name="79" value="141" />
+      <CVvalue name="80" value="150" />
+      <CVvalue name="81" value="160" />
+      <CVvalue name="82" value="169" />
+      <CVvalue name="83" value="179" />
+      <CVvalue name="84" value="188" />
+      <CVvalue name="85" value="197" />
+      <CVvalue name="86" value="207" />
+      <CVvalue name="87" value="216" />
+      <CVvalue name="88" value="225" />
+      <CVvalue name="89" value="235" />
+      <CVvalue name="90" value="235" />
+      <CVvalue name="91" value="235" />
+      <CVvalue name="92" value="235" />
+      <CVvalue name="93" value="235" />
+      <CVvalue name="94" value="235" />
+    </values>
+  </locomotive>
+</locomotive-config>

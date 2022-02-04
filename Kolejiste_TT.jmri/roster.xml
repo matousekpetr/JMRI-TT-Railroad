@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/xml/XSLT/roster2array.xsl" type="text/xsl"?>
+<roster-config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://jmri.org/xml/schema/roster.xsd">
+  <!--Written by JMRI version 4.25.3+R96551bed89 on Thu Dec 23 18:29:26 CET 2021-->
+  <roster>
+    <locomotive id="ARD-8VYH-1" fileName="ARD_8VYH_1.xml" roadNumber="8x výhýbky" roadName="SŽDC" mfg="dccdoma.cz" owner="Radoslav" model="" dccAddress="200" comment="" developerID="" manufacturerID="" productID="" maxSpeed="100" imageFilePath="preference:roster/55015 UNI16ARD s popisem.jpg" iconFilePath="preference:roster/55015 UNI16ARD s popisem.jpg" URL="" IsShuntingOn="">
+      <dateUpdated>2020-09-12T08:26:29.187+0000</dateUpdated>
+      <decoder model="UNI16ARD-8VYH" family="dccdoma.cz" comment="" maxFnNum="28" />
+      <locoaddress>
+        <dcclocoaddress number="200" longaddress="yes" />
+        <number>200</number>
+        <protocol>dcc_long</protocol>
+      </locoaddress>
+      <functionlabels />
+      <soundlabels />
+    </locomotive>
+    <locomotive id="ARD-8VYH-2" fileName="ARD_8VYH_2.xml" roadNumber="8x výhýbky" roadName="SŽDC" mfg="dccdoma.cz" owner="Radoslav" model="" dccAddress="208" comment="" developerID="" manufacturerID="" productID="" maxSpeed="100" imageFilePath="preference:roster/55015 UNI16ARD s popisem.jpg" iconFilePath="preference:roster/55015 UNI16ARD s popisem.jpg" URL="" IsShuntingOn="">
+      <dateUpdated>2020-08-20T15:16:22.367+0000</dateUpdated>
+      <decoder model="UNI16ARD-8VYH" family="dccdoma.cz" comment="" maxFnNum="28" />
+      <locoaddress>
+        <dcclocoaddress number="208" longaddress="yes" />
+        <number>208</number>
+        <protocol>dcc_long</protocol>
+      </locoaddress>
+      <functionlabels />
+      <soundlabels />
+    </locomotive>
+    <locomotive id="ARD-8VYH-3" fileName="ARD_8VYH_3.xml" roadNumber="8x výhýbky" roadName="SŽDC" mfg="dccdoma.cz" owner="Radoslav" model="" dccAddress="216" comment="" developerID="" manufacturerID="" productID="" maxSpeed="100" imageFilePath="preference:roster/55015 UNI16ARD s popisem.jpg" iconFilePath="preference:roster/55015 UNI16ARD s popisem.jpg" URL="" IsShuntingOn="">
+      <dateUpdated>2020-08-20T19:15:03.944+0000</dateUpdated>
+      <decoder model="UNI16ARD-8VYH" family="dccdoma.cz" comment="" maxFnNum="28" />
+      <locoaddress>
+        <dcclocoaddress number="216" longaddress="yes" />
+        <number>216</number>
+        <protocol>dcc_long</protocol>
+      </locoaddress>
+      <functionlabels />
+      <soundlabels />
+    </locomotive>
+    <locomotive id="ARD-SCOM-TC-1" fileName="ARD_SCOM_TC_2.xml" roadNumber="16x návěstidla" roadName="SŽDC" mfg="dccdoma.cz" owner="Radoslav" model="" dccAddress="100" comment="" developerID="" manufacturerID="" productID="" maxSpeed="100" imageFilePath="preference:roster/1552226416.jpg" iconFilePath="preference:roster/1552226416.jpg" URL="" IsShuntingOn="">
+      <dateUpdated>2020-08-26T14:02:25.852+0000</dateUpdated>
+      <decoder model="ARD-SCOM-TC" family="dccdoma.cz" comment="" maxFnNum="28" />
+      <locoaddress>
+        <dcclocoaddress number="100" longaddress="yes" />
+        <number>100</number>
+        <protocol>dcc_long</protocol>
+      </locoaddress>
+      <functionlabels />
+      <soundlabels />
+    </locomotive>
+    <locomotive id="ARD-SCOM-TC-2" fileName="ARD_SCOM_TC_20.xml" roadNumber="16x návěstidla" roadName="SŽDC" mfg="dccdoma.cz" owner="Radoslav" model="" dccAddress="128" comment="" developerID="" manufacturerID="" productID="" maxSpeed="100" imageFilePath="preference:roster/1552226416.jpg" iconFilePath="preference:roster/1552226416.jpg" URL="" IsShuntingOn="">
+      <dateUpdated>2020-08-26T14:19:15.013+0000</dateUpdated>
+      <decoder model="ARD-SCOM-TC" family="dccdoma.cz" comment="" maxFnNum="28" />
+      <locoaddress>
+        <dcclocoaddress number="128" longaddress="yes" />
+        <number>128</number>
+        <protocol>dcc_long</protocol>
+      </locoaddress>
+      <functionlabels />
+      <soundlabels />
+    </locomotive>
+    <locomotive id="Arriva" fileName="Arriva2.xml" roadNumber="BR628.4" roadName="Arriva" mfg="Kres" owner="Radoslav" model="" dccAddress="14" comment="" developerID="" manufacturerID="" productID="" maxSpeed="100" imageFilePath="preference:roster/arriva_2.jpg" iconFilePath="preference:roster/arriva_2.jpg" URL="" IsShuntingOn="">
+      <dateUpdated>2020-08-22T12:42:00.473+0000</dateUpdated>
+      <decoder model="NMRA standard CV definitions" family="NMRA standard CV definitions" comment="" maxFnNum="28" />
+      <locoaddress>
+        <dcclocoaddress number="14" longaddress="no" />
+        <number>14</number>
+        <protocol>dcc_short</protocol>
+      </locoaddress>
+      <functionlabels>
+        <functionlabel num="0" lockable="true" functionImage="" functionImageSelected="">Přední světla</functionlabel>
+        <functionlabel num="1" lockable="true" functionImage="" functionImageSelected="">Zadní světla</functionlabel>
+        <functionlabel num="2" lockable="true" functionImage="" functionImageSelected="">Dálková světla</functionlabel>
+        <functionlabel num="3" lockable="true" functionImage="" functionImageSelected="">Vnitřní osvětlení</functionlabel>
+        <functionlabel num="4" lockable="true" functionImage="" functionImageSelected="">Obě světla bílá</functionlabel>
+        <functionlabel num="5" lockable="true" functionImage="" functionImageSelected="">Transparent</functionlabel>
+        <functionlabel num="6" lockable="true" functionImage="" functionImageSelected="">Osvětlení strojvedoucího</functionlabel>
+        <functionlabel num="7" lockable="true" functionImage="" functionImageSelected="">Osvětlení záchod</functionlabel>
+      </functionlabels>
+      <soundlabels />
+    </locomotive>
+    <locomotive id="Bardotka" fileName="Bardotka_2.xml" roadNumber="T478.1" roadName="České dráhy" mfg="Kuehn 33410" owner="Radoslav" model="" dccAddress="10" comment="" developerID="" manufacturerID="" productID="" maxSpeed="100" imageFilePath="preference:roster/Bardotka T478.1 (Kuehn 33410).jpg" iconFilePath="preference:roster/Bardotka T478.1 (Kuehn 33410).jpg" URL="" IsShuntingOn="">
+      <dateUpdated>2020-08-22T19:25:01.288+0000</dateUpdated>
+      <decoder model="N45" family="NMRA-DCC/Motorola" comment="" maxFnNum="28" />
+      <locoaddress>
+        <dcclocoaddress number="10" longaddress="no" />
+        <number>10</number>
+        <protocol>dcc_short</protocol>
+      </locoaddress>
+      <functionlabels />
+      <soundlabels />
+    </locomotive>
+    <locomotive id="Brejlovec Najbrt" fileName="Brejlovec_Modr_.xml" roadNumber="753 193-2" roadName="České dráhy" mfg="Roco 36256" owner="Radoslav" model="" dccAddress="6" comment="" developerID="" manufacturerID="" productID="" maxSpeed="100" imageFilePath="preference:roster/Brejlovec 754.067-7 (výr. ROCO 36256).jpg" iconFilePath="preference:roster/Brejlovec 754.067-7 (výr. ROCO 36256).jpg" URL="" IsShuntingOn="F4">
+      <dateUpdated>2021-08-27T17:55:13.861+0000</dateUpdated>
+      <decoder model="N025" family="NMRA-DCC/Motorola" comment="" maxFnNum="28" />
+      <locoaddress>
+        <dcclocoaddress number="6" longaddress="no" />
+        <number>6</number>
+        <protocol>dcc_short</protocol>
+      </locoaddress>
+      <functionlabels>
+        <functionlabel num="0" lockable="true" functionImage="" functionImageSelected="">Světla</functionlabel>
+        <functionlabel num="4" lockable="true" functionImage="" functionImageSelected="">Posun</functionlabel>
+      </functionlabels>
+      <soundlabels />
+    </locomotive>
+    <locomotive id="Brejlovec zeleno-šedý, modrý rám" fileName="Brejlovec.xml" roadNumber="753 001" roadName="České dráhy" mfg="Kuehn 33384" owner="Radoslav" model="" dccAddress="11" comment="" developerID="" manufacturerID="" productID="" maxSpeed="100" imageFilePath="preference:roster/Brejlovec zeleno-šedý, modrý rám (Kuehn 33384).jpg" iconFilePath="preference:roster/Brejlovec zeleno-šedý, modrý rám (Kuehn 33384).jpg" URL="" IsShuntingOn="">
+      <dateUpdated>2021-10-30T14:42:04.310+0000</dateUpdated>
+      <decoder model="8x00nn - 2 outputs" family="Locomotive Decoders" comment="" maxFnNum="28" />
+      <locoaddress>
+        <dcclocoaddress number="11" longaddress="no" />
+        <number>11</number>
+        <protocol>dcc_short</protocol>
+      </locoaddress>
+      <functionlabels />
+      <soundlabels />
+      <attributepairs>
+        <keyvaluepair>
+          <key>DispatcherTrainType</key>
+          <value>LOCAL_PASSENGER</value>
+        </keyvaluepair>
+      </attributepairs>
+    </locomotive>
+    <locomotive id="Brejlovec červený" fileName="Brejl.xml" roadNumber="754 049" roadName="České dráhy" mfg="MTB 754.049" owner="Radoslav" model="" dccAddress="12" comment="" developerID="" manufacturerID="" productID="" maxSpeed="100" imageFilePath="preference:roster/Brejlovec 754.049.jpg" iconFilePath="preference:roster/Brejlovec 754.049.jpg" URL="" IsShuntingOn="">
+      <dateUpdated>2019-08-15T11:53:59.293+0000</dateUpdated>
+      <decoder model="N45-P8" family="NMRA-DCC/Motorola" comment="" maxFnNum="28" />
+      <locoaddress>
+        <dcclocoaddress number="12" longaddress="no" />
+        <number>12</number>
+        <protocol>dcc_short</protocol>
+      </locoaddress>
+      <functionlabels />
+      <soundlabels />
+      <attributepairs>
+        <keyvaluepair>
+          <key>DispatcherTrainType</key>
+          <value>LOKÁLNÍ_OSOBNÍ</value>
+        </keyvaluepair>
+      </attributepairs>
+    </locomotive>
+    <locomotive id="Kocour" fileName="Kocour.xml" roadNumber="740 016-1" roadName="Lokorail a. s." mfg="Tillig 02759" owner="Radoslav" model="" dccAddress="13" comment="" developerID="" manufacturerID="" productID="" maxSpeed="100" imageFilePath="preference:roster/T_02759-HM.jpg" iconFilePath="preference:roster/T_02759-HM.jpg" URL="" IsShuntingOn="">
+      <dateUpdated>2021-10-30T14:09:55.059+0000</dateUpdated>
+      <decoder model="8x00nn - 2 outputs" family="Locomotive Decoders" comment="" maxFnNum="28" />
+      <locoaddress>
+        <dcclocoaddress number="13" longaddress="no" />
+        <number>13</number>
+        <protocol>dcc_short</protocol>
+      </locoaddress>
+      <functionlabels />
+      <soundlabels />
+    </locomotive>
+    <locomotive id="RegioJet CZ (Desiro řady 642)" fileName="RegioJet.xml" roadNumber="642" roadName="RegioJet a. s." mfg="Tillig 02887" owner="Radoslav" model="" dccAddress="1" comment="Max. rychlost: 160 km/h" developerID="" manufacturerID="" productID="" maxSpeed="100" imageFilePath="preference:roster/Motorová jednotka 642 - RegioJet.jpg" iconFilePath="preference:roster/Motorová jednotka 642 - RegioJet.jpg" URL="" IsShuntingOn="F1">
+      <dateUpdated>2020-08-22T13:03:50.954+0000</dateUpdated>
+      <decoder model="MX622N version 31" family="Zimo Unified software (version 25+)" comment="" maxFnNum="28" />
+      <locoaddress>
+        <dcclocoaddress number="1" longaddress="no" />
+        <number>1</number>
+        <protocol>dcc_short</protocol>
+      </locoaddress>
+      <functionlabels>
+        <functionlabel num="0" lockable="true" functionImage="" functionImageSelected="">Světla</functionlabel>
+        <functionlabel num="1" lockable="true" functionImage="" functionImageSelected="">Posun</functionlabel>
+      </functionlabels>
+      <soundlabels />
+    </locomotive>
+    <locomotive id="Regiojet Vectron 193" fileName="Regiojet_Vectron_1.xml" roadNumber="193" roadName="RegioJet a. s." mfg="Tillig 04821" owner="Radoslav" model="" dccAddress="7" comment="" developerID="" manufacturerID="" productID="" maxSpeed="100" imageFilePath="" iconFilePath="" URL="" IsShuntingOn="">
+      <dateUpdated>2021-10-30T14:12:36.107+0000</dateUpdated>
+      <decoder model="8x00nn - 2 outputs" family="Locomotive Decoders" comment="" maxFnNum="28" />
+      <locoaddress>
+        <dcclocoaddress number="7" longaddress="no" />
+        <number>7</number>
+        <protocol>dcc_short</protocol>
+      </locoaddress>
+      <functionlabels />
+      <soundlabels />
+    </locomotive>
+    <locomotive id="RegioSpider 33554" fileName="RegiSpider_33554.xml" roadNumber="" roadName="" mfg="" owner="" model="" dccAddress="8" comment="" developerID="-1" manufacturerID="134" productID="" maxSpeed="100" imageFilePath="" iconFilePath="" URL="" IsShuntingOn="">
+      <dateUpdated>2021-10-17T13:25:48.212+0000</dateUpdated>
+      <decoder model="8x00nn - 2 outputs" family="Locomotive Decoders" comment="" maxFnNum="28" />
+      <locoaddress>
+        <dcclocoaddress number="8" longaddress="no" />
+        <number>8</number>
+        <protocol>dcc_short</protocol>
+      </locoaddress>
+      <functionlabels />
+      <soundlabels />
+    </locomotive>
+    <locomotive id="RegioSpider 33555" fileName="BR_840.xml" roadNumber="840 006-1" roadName="České dráhy" mfg="Kuehn 33550" owner="Radoslav" model="" dccAddress="9" comment="" developerID="" manufacturerID="" productID="" maxSpeed="100" imageFilePath="preference:roster/_vyr_283433550.jpg" iconFilePath="preference:roster/k-33550A-b-800x800.jpg" URL="" IsShuntingOn="F4">
+      <dateUpdated>2021-05-29T10:51:47.961+0000</dateUpdated>
+      <decoder model="N45-P8" family="NMRA-DCC/Motorola" comment="" maxFnNum="28" />
+      <locoaddress>
+        <dcclocoaddress number="9" longaddress="no" />
+        <number>9</number>
+        <protocol>dcc_short</protocol>
+      </locoaddress>
+      <functionlabels>
+        <functionlabel num="0" lockable="true" functionImage="" functionImageSelected="">Světla</functionlabel>
+        <functionlabel num="1" lockable="true" functionImage="" functionImageSelected="">Vnitřní osvětlení</functionlabel>
+        <functionlabel num="4" lockable="true" functionImage="" functionImageSelected="">Posun</functionlabel>
+      </functionlabels>
+      <soundlabels />
+    </locomotive>
+    <locomotive id="Traxx " fileName="Cargo.xml" roadNumber="" roadName="České Dráhy" mfg="Tillig 01434L" owner="Radoslav" model="" dccAddress="2" comment="" developerID="" manufacturerID="" productID="" maxSpeed="100" imageFilePath="preference:roster/Bardotka 749 018.jpg" iconFilePath="preference:roster/Bardotka 749 018.jpg" URL="" IsShuntingOn="">
+      <dateUpdated>2019-07-22T09:58:21.448+0000</dateUpdated>
+      <decoder model="Silver+ PluX12 10312-01" family="Lenz Plus decoders released March 2010, updated April 2016" comment="" maxFnNum="28" />
+      <locoaddress>
+        <dcclocoaddress number="2" longaddress="no" />
+        <number>2</number>
+        <protocol>dcc_short</protocol>
+      </locoaddress>
+      <functionlabels />
+      <soundlabels />
+    </locomotive>
+    <locomotive id="Traxx ČD Cargo " fileName="_D_Cargo.xml" roadNumber="762 001-6" roadName="ČD Cargo" mfg="Tillig 01431L" owner="Radoslav" model="" dccAddress="4" comment="" developerID="" manufacturerID="" productID="" maxSpeed="100" imageFilePath="preference:roster/CD Cargo.jpg" iconFilePath="preference:roster/CD Cargo.jpg" URL="" IsShuntingOn="">
+      <dateUpdated>2021-05-29T10:52:24.025+0000</dateUpdated>
+      <decoder model="Silver+ PluX12 10312-01" family="Lenz Plus decoders released March 2010, updated April 2016" comment="" maxFnNum="28" />
+      <locoaddress>
+        <dcclocoaddress number="4" longaddress="no" />
+        <number>4</number>
+        <protocol>dcc_short</protocol>
+      </locoaddress>
+      <functionlabels>
+        <functionlabel num="0" lockable="true" functionImage="" functionImageSelected="">Světla</functionlabel>
+        <functionlabel num="1" lockable="true" functionImage="" functionImageSelected="">Reflektory </functionlabel>
+      </functionlabels>
+      <soundlabels />
+    </locomotive>
+    <locomotive id="ČD 842" fileName="Brejlovec__erven_.xml" roadNumber="842 004" roadName="České dráhy" mfg="MTB" owner="Radoslav" model="" dccAddress="5" comment="" developerID="" manufacturerID="" productID="" maxSpeed="100" imageFilePath="preference:roster/Výstřižek.PNG" iconFilePath="preference:roster/Výstřižek.PNG" URL="" IsShuntingOn="">
+      <dateUpdated>2020-08-21T09:06:31.301+0000</dateUpdated>
+      <decoder model="N45-P8" family="NMRA-DCC/Motorola" comment="" maxFnNum="28" />
+      <locoaddress>
+        <dcclocoaddress number="5" longaddress="no" />
+        <number>5</number>
+        <protocol>dcc_short</protocol>
+      </locoaddress>
+      <functionlabels />
+      <soundlabels />
+    </locomotive>
+  </roster>
+</roster-config>

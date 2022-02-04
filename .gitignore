@@ -1,0 +1,5 @@
+/jython/*
+/log/*
+/preferences/*
+/systemfiles/*
+*.bak
