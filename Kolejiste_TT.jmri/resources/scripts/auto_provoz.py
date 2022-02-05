@@ -57,7 +57,7 @@ class dcc_basic_methods(jmri.jmrit.automat.AbstractAutomaton):
         else:
             DIR_STOP[number].setKnownState(ACTIVE)       
 
-    def blockFree(self, sensor, enable = 0):
+    def blockFree(self, sensor, enable = default_enable):
         for i in range(len(sensor)):
             self.waitSensorActive(XS[sensor[i]])
             IS[sensor[i]].setKnownState(INACTIVE)
@@ -151,17 +151,17 @@ class dcc_basic_routes(dcc_basic_methods):
 
  # Zabreh - smer A
     # odjezd
-    def zabreh_1_odj_a(self): self.trainOut([3, 1],       [CLOSED, CLOSED],           [15, 29], 1, False, 0, zabreh_kriz)
+    def zabreh_1_odj_a(self): self.trainOut([3, 1],       [CLOSED, CLOSED],           [15, 29], 1, False, 0)
     def zabreh_2_odj_a(self): self.trainOut([2, 1],       [CLOSED, THROWN],           [16, 29], 1, False, 0, zabreh_kriz)
-    def zabreh_3_odj_a(self): self.trainOut([4, 3, 1],    [THROWN, THROWN, CLOSED],   [15, 29], 1, False, 0, zabreh_kriz)
+    def zabreh_3_odj_a(self): self.trainOut([4, 3, 1],    [THROWN, THROWN, CLOSED],   [15, 29], 1, False, 0)
     def zabreh_4_odj_a(self): self.trainOut([2, 1],       [THROWN, THROWN],           [16, 29], 1, False, 0, zabreh_kriz)
-    def zabreh_5_odj_a(self): self.trainOut([4, 3, 1],    [CLOSED, THROWN, CLOSED],   [15, 29], 1, False, 0, zabreh_kriz)
+    def zabreh_5_odj_a(self): self.trainOut([4, 3, 1],    [CLOSED, THROWN, CLOSED],   [15, 29], 1, False, 0)
     # prijezd
-    def zabreh_1_vj_a(self): self.trainIn([1, 3],         [THROWN, CLOSED],           [15, 5],    2, True, self.z1wait, True, zabreh_kriz)
+    def zabreh_1_vj_a(self): self.trainIn([1, 3],         [THROWN, CLOSED],           [15, 5],    2, True, self.z1wait, True)
     def zabreh_2_vj_a(self): self.trainIn([1, 2],         [CLOSED, CLOSED],           [16, 4],    2, True, self.z2wait, True, zabreh_kriz)
-    def zabreh_3_vj_a(self): self.trainIn([1, 3, 4],      [THROWN, THROWN, THROWN],   [15, 6],    2, True, self.z3wait, True, zabreh_kriz)
+    def zabreh_3_vj_a(self): self.trainIn([1, 3, 4],      [THROWN, THROWN, THROWN],   [15, 6],    2, True, self.z3wait, True)
     def zabreh_4_vj_a(self): self.trainIn([1, 2],         [CLOSED, THROWN],           [16, 3],    2, True, self.z4wait, True, zabreh_kriz)      
-    def zabreh_5_vj_a(self): self.trainIn([1, 3, 4],      [THROWN, THROWN, CLOSED],   [16, 7],    2, True, self.z5wait, True, zabreh_kriz)
+    def zabreh_5_vj_a(self): self.trainIn([1, 3, 4],      [THROWN, THROWN, CLOSED],   [16, 7],    2, True, self.z5wait, True)
     # prujezd
     def zabreh_1_pjz(self): self.trainPass([1, 3],        [THROWN, CLOSED],           [15, 5],    [11, 10, 9],  [CLOSED, THROWN, CLOSED],   [34, 33, 28], True, self.z1wait) 
                
