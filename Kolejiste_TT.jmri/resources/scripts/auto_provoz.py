@@ -12,7 +12,7 @@ class dcc_basic_methods(jmri.jmrit.automat.AbstractAutomaton):
                 XT[turnout[i]].setState(state[i])
                 self.waitMsec(cekani_vyhybka)
 
-    def reserveBlock(self, block, withPriority = False, enable = default_enable):
+    def reserveBlock(self, block, withPriority = False, enable = default_enable, en = False):
         free = True
         a = 0
         if(withPriority):
@@ -27,7 +27,7 @@ class dcc_basic_methods(jmri.jmrit.automat.AbstractAutomaton):
                 self.waitMsec(zpozdeni_while)
                 free = False
                 for i in range(len(block)):
-                    if(XS[block[i]].getKnownState() == ACTIVE or IS[block[i]].getKnownState() == ACTIVE or powermanager.getPower() != jmri.PowerManager.ON or enable.getKnownState() == ACTIVE):
+                    if(XS[block[i]].getKnownState() == ACTIVE or IS[block[i]].getKnownState() == ACTIVE or powermanager.getPower() != jmri.PowerManager.ON or (enable.getKnownState() == ACTIVE and en == True)):
                         free = True
                         self.throttle.setSpeedSetting(0)
                         a = 0
@@ -37,8 +37,10 @@ class dcc_basic_methods(jmri.jmrit.automat.AbstractAutomaton):
 
         for i in range(len(block)):
             IS[block[i]].setKnownState(ACTIVE)
+        
+        if en:
             enable.setKnownState(ACTIVE)
-                
+            
     def train(self, direction, speed, dir_inv):
         if dir_inv:
             if direction:
@@ -57,10 +59,12 @@ class dcc_basic_methods(jmri.jmrit.automat.AbstractAutomaton):
         else:
             DIR_STOP[number].setKnownState(ACTIVE)       
 
-    def blockFree(self, sensor, enable = default_enable):
+    def blockFree(self, sensor, enable = default_enable, en = False):
         for i in range(len(sensor)):
             self.waitSensorActive(XS[sensor[i]])
             IS[sensor[i]].setKnownState(INACTIVE)
+        
+        if en:
             enable.setKnownState(INACTIVE)
 
     def stopWithDelay(self, time, stop):
@@ -68,21 +72,21 @@ class dcc_basic_methods(jmri.jmrit.automat.AbstractAutomaton):
         if stop:
             self.throttle.setSpeedSetting(0)
 
-    def trainOut(self, turnouts, turnouts_states, blocks, permission, dir_inv, delay = 0, enable = default_enable):
-        self.reserveBlock(blocks, True, enable)
+    def trainOut(self, turnouts, turnouts_states, blocks, permission, dir_inv, delay = 0, enable = default_enable, en = False):
+        self.reserveBlock(blocks, True, enable, en)
         self.permission(permission, 0)
         self.setTurnout(turnouts, turnouts_states)
         self.train(self.smer, self.rychlost_stanice, dir_inv)
-        self.blockFree(blocks, enable)
+        self.blockFree(blocks, enable, en)
         self.permission(permission, 2)
         self.waitMsec(delay)
 
-    def trainIn(self, turnouts, turnouts_states, blocks, permission, dir_inv, stop_time = 2000, stop = True, enable = default_enable):
-        self.reserveBlock(blocks, False, enable)
+    def trainIn(self, turnouts, turnouts_states, blocks, permission, dir_inv, stop_time = 2000, stop = True, enable = default_enable, en = False):
+        self.reserveBlock(blocks, False, enable, en)
         self.permission(permission, 1)
         self.setTurnout(turnouts, turnouts_states)
         self.train(self.smer, self.rychlost_stanice, dir_inv)
-        self.blockFree(blocks, enable)
+        self.blockFree(blocks, enable, en)
         self.permission(permission, 2)
         self.stopWithDelay(stop_time, stop)
         if stop:
@@ -152,16 +156,16 @@ class dcc_basic_routes(dcc_basic_methods):
  # Zabreh - smer A
     # odjezd
     def zabreh_1_odj_a(self): self.trainOut([3, 1],       [CLOSED, CLOSED],           [15, 29], 1, False, 0)
-    def zabreh_2_odj_a(self): self.trainOut([2, 1],       [CLOSED, THROWN],           [16, 29], 1, False, 0, zabreh_kriz)
+    def zabreh_2_odj_a(self): self.trainOut([2, 1],       [CLOSED, THROWN],           [16, 29], 1, False, 0, zabreh_kriz, True)
     def zabreh_3_odj_a(self): self.trainOut([4, 3, 1],    [THROWN, THROWN, CLOSED],   [15, 29], 1, False, 0)
-    def zabreh_4_odj_a(self): self.trainOut([2, 1],       [THROWN, THROWN],           [16, 29], 1, False, 0, zabreh_kriz)
+    def zabreh_4_odj_a(self): self.trainOut([2, 1],       [THROWN, THROWN],           [16, 29], 1, False, 0, zabreh_kriz, True)
     def zabreh_5_odj_a(self): self.trainOut([4, 3, 1],    [CLOSED, THROWN, CLOSED],   [15, 29], 1, False, 0)
     # prijezd
-    def zabreh_1_vj_a(self): self.trainIn([1, 3],         [THROWN, CLOSED],           [15, 5],    2, True, self.z1wait, True)
-    def zabreh_2_vj_a(self): self.trainIn([1, 2],         [CLOSED, CLOSED],           [16, 4],    2, True, self.z2wait, True, zabreh_kriz)
-    def zabreh_3_vj_a(self): self.trainIn([1, 3, 4],      [THROWN, THROWN, THROWN],   [15, 6],    2, True, self.z3wait, True)
-    def zabreh_4_vj_a(self): self.trainIn([1, 2],         [CLOSED, THROWN],           [16, 3],    2, True, self.z4wait, True, zabreh_kriz)      
-    def zabreh_5_vj_a(self): self.trainIn([1, 3, 4],      [THROWN, THROWN, CLOSED],   [16, 7],    2, True, self.z5wait, True)
+    def zabreh_1_vj_a(self): self.trainIn([1, 3],         [THROWN, CLOSED],           [15, 5],    2, True, self.z1wait, True, zabreh_kriz, True)
+    def zabreh_2_vj_a(self): self.trainIn([1, 2],         [CLOSED, CLOSED],           [16, 4],    2, True, self.z2wait, True)
+    def zabreh_3_vj_a(self): self.trainIn([1, 3, 4],      [THROWN, THROWN, THROWN],   [15, 6],    2, True, self.z3wait, True, zabreh_kriz, True)
+    def zabreh_4_vj_a(self): self.trainIn([1, 2],         [CLOSED, THROWN],           [16, 3],    2, True, self.z4wait, True)      
+    def zabreh_5_vj_a(self): self.trainIn([1, 3, 4],      [THROWN, THROWN, CLOSED],   [16, 7],    2, True, self.z5wait, True, zabreh_kriz, True)
     # prujezd
     def zabreh_1_pjz(self): self.trainPass([1, 3],        [THROWN, CLOSED],           [15, 5],    [11, 10, 9],  [CLOSED, THROWN, CLOSED],   [34, 33, 28], True, self.z1wait) 
                
