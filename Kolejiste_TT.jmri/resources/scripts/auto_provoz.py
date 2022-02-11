@@ -165,7 +165,7 @@ class dcc_basic_routes(dcc_basic_methods):
     def zabreh_2_vj_a(self): self.trainIn([1, 2],         [CLOSED, CLOSED],           [16, 4],    2, True, self.z2wait, True)
     def zabreh_3_vj_a(self): self.trainIn([1, 3, 4],      [THROWN, THROWN, THROWN],   [15, 6],    2, True, self.z3wait, True, zabreh_kriz, True)
     def zabreh_4_vj_a(self): self.trainIn([1, 2],         [CLOSED, THROWN],           [16, 3],    2, True, self.z4wait, True)      
-    def zabreh_5_vj_a(self): self.trainIn([1, 3, 4],      [THROWN, THROWN, CLOSED],   [16, 7],    2, True, self.z5wait, True, zabreh_kriz, True)
+    def zabreh_5_vj_a(self): self.trainIn([1, 3, 4],      [THROWN, THROWN, CLOSED],   [15, 7],    2, True, self.z5wait, True, zabreh_kriz, True)
     # prujezd
     def zabreh_1_pjz(self): self.trainPass([1, 3],        [THROWN, CLOSED],           [15, 5],    [11, 10, 9],  [CLOSED, THROWN, CLOSED],   [34, 33, 28], True, self.z1wait) 
                

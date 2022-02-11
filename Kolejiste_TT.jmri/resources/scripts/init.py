@@ -11,6 +11,8 @@ zpozdeni_while = 1000
 
 z5_petrov = memories.provideMemory("z5_petrov")
 z3_petrov = memories.provideMemory("z3_petrov")
+dir_sobotin = memories.provideMemory("dir_sobotin")
+dir_zabreh = memories.provideMemory("dir_zabreh")
 
 default_enable = sensors.provideSensor("IS8")
 zabreh_kriz = sensors.provideSensor("IS9")

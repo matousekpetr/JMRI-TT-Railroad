@@ -1,10 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <auxiliary-configuration xmlns="http://www.netbeans.org/ns/auxiliary-configuration/1">
+    <classPreferences xmlns="http://jmri.org/xml/schema/auxiliary-configuration/class-preferences-4-3-5.xsd">
+        <preferences xmlns="" class="jmri.managers.JmriUserPreferencesManager"/>
+    </classPreferences>
+    <comboBoxLastValue xmlns="http://jmri.org/xml/schema/auxiliary-configuration/combobox-4-3-5.xsd">
+        <comboBox xmlns="" lastSelected="XpressNet Simulator" name="Lenz"/>
+    </comboBoxLastValue>
+    <settings xmlns="http://jmri.org/xml/schema/auxiliary-configuration/settings-4-3-5.xsd">
+        <setting xmlns="">jmri.jmrit.roster.swing.RosterFrame.hideGroups</setting>
+    </settings>
+    <tableDetails xmlns="http://jmri.org/xml/schema/auxiliary-configuration/table-details-4-3-5.xsd">
+        <table xmlns="" name="jmri.jmrit.beantable.SensorTableAction:Internal">
+            <columns/>
+        </table>
+        <table xmlns="" name="jmri.jmrit.beantable.ReporterTableAction:Internal">
+            <columns/>
+        </table>
+        <table xmlns="" name="jmri.jmrit.beantable.LightTableAction:Vše">
+            <columns/>
+        </table>
+        <table xmlns="" name="jmri.jmrit.beantable.RailComTableAction:RailCom ID">
+            <columns/>
+        </table>
+        <table xmlns="" name="jmri.jmrit.beantable.LRouteTableAction:LTrasy">
+            <columns/>
+        </table>
+        <table xmlns="" name="jmri.jmrit.beantable.LogixTableAction:Logix">
+            <columns/>
+        </table>
+        <table xmlns="" name="jmri.jmrit.beantable.TurnoutTableAction:Vše">
+            <columns/>
+        </table>
+        <table xmlns="" name="jmri.jmrit.beantable.SignalGroupTableAction:Indikátory">
+            <columns/>
+        </table>
+        <table xmlns="" name="jmri.jmrit.beantable.AudioTableAction">
+            <columns>
+                <column hidden="false" name="Popis" order="2" width="406"/>
+                <column hidden="false" name="Poznámka" order="3" width="126"/>
+                <column hidden="false" name="Uživatelský název" order="1" width="126"/>
+                <column hidden="false" name="Column4" order="4" width="77"/>
+                <column hidden="false" name="Column5" order="5" width="71"/>
+                <column hidden="false" name="Systémový název" order="0" width="46"/>
+            </columns>
+            <sortOrder>
+                <sortKey column="0" sortOrder="ASCENDING"/>
+            </sortOrder>
+        </table>
+        <table xmlns="" name="jmri.jmrit.beantable.IdTagTableAction:Vše">
+            <columns/>
+        </table>
+        <table xmlns="" name="jmri.jmrit.beantable.TurnoutTableAction:Internal">
+            <columns/>
+        </table>
+        <table xmlns="" name="jmri.jmrit.beantable.ReporterTableAction:Vše">
+            <columns/>
+        </table>
+        <table xmlns="" name="jmri.jmrit.beantable.OBlockTableAction">
+            <columns/>
+        </table>
+        <table xmlns="" name="jmri.jmrit.beantable.SignalHeadTableAction:Návěstní štíty">
+            <columns/>
+        </table>
+        <table xmlns="" name="jmri.jmrit.logixng.LogixNG_UserPreferences:LogixNG Moduly">
+            <columns/>
+        </table>
+        <table xmlns="" name="jmri.jmrit.beantable.SectionTableAction:Sekce">
+            <columns/>
+        </table>
+        <table xmlns="" name="jmri.jmrit.beantable.LightTableAction:Internal">
+            <columns/>
+        </table>
+        <table xmlns="" name="jmri.jmrit.beantable.IdTagTableAction:Internal">
+            <columns/>
+        </table>
+        <table xmlns="" name="jmri.jmrit.beantable.SignalMastTableAction:Návěstidla">
+            <columns/>
+        </table>
+        <table xmlns="" name="jmri.jmrit.beantable.TransitTableAction:Tranzity">
+            <columns/>
+        </table>
+        <table xmlns="" name="jmri.jmrit.beantable.RouteTableDataModel:Trasy">
+            <columns/>
+        </table>
+        <table xmlns="" name="jmri.jmrit.beantable.SignalMastLogicTableAction:Logika návěstidel">
+            <columns/>
+        </table>
+        <table xmlns="" name="jmri.jmrit.beantable.BlockTableAction:Bloky">
+            <columns/>
+        </table>
+        <table xmlns="" name="jmri.jmrit.beantable.LightTableAction:XpressNet">
+            <columns/>
+        </table>
+        <table xmlns="" name="jmri.jmrit.beantable.SensorTableAction:XpressNet">
+            <columns/>
+        </table>
+        <table xmlns="" name="jmri.jmrit.beantable.MemoryTableDataModel:Paměťové proměnné">
+            <columns>
+                <column hidden="false" name="Poznámka" order="3" width="126"/>
+                <column hidden="false" name="Uživatelský název" order="1" width="126"/>
+                <column hidden="false" name="Hodnota" order="2" width="64"/>
+                <column hidden="false" name="Column4" order="4" width="77"/>
+                <column hidden="false" name="Systémový název" order="0" width="155"/>
+            </columns>
+            <sortOrder>
+                <sortKey column="1" sortOrder="ASCENDING"/>
+            </sortOrder>
+        </table>
+        <table xmlns="" name="jmri.jmrit.logixng.LogixNG_UserPreferences:LogixyNG">
+            <columns/>
+        </table>
+        <table xmlns="" name="jmri.jmrit.beantable.TurnoutTableAction:XpressNet">
+            <columns/>
+        </table>
+        <table xmlns="" name="jmri.jmrit.beantable.SensorTableAction:Vše">
+            <columns/>
+        </table>
+        <table xmlns="" name="jmri.jmrit.logixng.LogixNG_UserPreferences:LogixNG Tabulky">
+            <columns/>
+        </table>
+    </tableDetails>
     <windowDetails xmlns="http://jmri.org/xml/schema/auxiliary-configuration/window-details-4-3-5.xsd">
-        <window xmlns="" class="jmri.jmrit.display.controlPanelEditor.ControlPanelEditor:Ovladaci panel" height="1056.0" locX="-8.0" locY="-8.0" width="1936.0"/>
-        <window xmlns="" class="jmri.jmrit.roster.Roster"/>
+        <window xmlns="" class="jmri.jmrit.beantable.ListedTableFrame:Paměťové proměnné" height="1040.0" locX="828.0" locY="224.0" width="1224.0"/>
+        <window xmlns="" class="Systémová konzole JMRI" height="440.0" locX="96.0" locY="514.0" width="879.0"/>
         <window xmlns="" class="jmri.jmrit.display.controlPanelEditor.ControlPanelEditor:JOP" height="1056.0" locX="-8.0" locY="-8.0" width="1936.0"/>
         <window xmlns="" class="jmri.jmrit.withrottle.UserInterface" height="270.0" locX="0.0" locY="0.0" width="400.0"/>
         <window xmlns="" class="PanelPro" height="264.0" locX="674.0" locY="408.0" width="572.0"/>
+        <window xmlns="" class="jmri.jmrit.display.controlPanelEditor.ControlPanelEditor:Ovladaci panel" height="1056.0" locX="-8.0" locY="-8.0" width="1936.0"/>
+        <window xmlns="" class="jmri.jmrit.roster.Roster"/>
+        <window xmlns="" class="Lokální ovladače JMRI" height="239.0" locX="31.0" locY="31.0" width="336.0"/>
+        <window xmlns="" class="apps.gui3.tabbedpreferences.TabbedPreferencesFrame:Předvolby" height="1009.0" locX="31.0" locY="0.0" width="920.0"/>
+        <window xmlns="" class="Skript výstup" height="222.0" locX="62.0" locY="62.0" width="377.0"/>
+        <window xmlns="" class="Skript vstup" height="222.0" locX="126.0" locY="481.0" width="544.0"/>
+        <window xmlns="" class="jmri.jmrit.roster.swing.RosterFrame:Evidence" height="1056.0" locX="-8.0" locY="-8.0" width="1936.0">
+            <properties>
+                <property>
+                    <key>selectedProgrammer</key>
+                    <value class="java.lang.String">service</value>
+                </property>
+            </properties>
+        </window>
     </windowDetails>
 </auxiliary-configuration>
