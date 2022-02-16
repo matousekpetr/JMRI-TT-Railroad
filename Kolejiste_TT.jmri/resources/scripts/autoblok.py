@@ -5,7 +5,7 @@ class abs_navestidla(dcc_automated_routes) :
    
     def handle(self):
 
-        self.autoblok_navestidla()
+        self.autoblock_signals()
         self.waitMsec(500)
         return 1
 

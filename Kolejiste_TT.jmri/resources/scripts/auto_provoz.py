@@ -285,8 +285,6 @@ class dcc_basic_routes(dcc_basic_methods):
         self.signal_logic(27, ABS[8], NAV[4])
 
     def zabreh_sobotin_zabreh(self, kusa_odjezd, kusa_vjezd, odj_z, vj_z, outOfDeadTrack, track):
-        global dir_sobotin
-        global dir_zabreh
 
         while(dir_sobotin > 1 or track == True):
             self.waitMsec(zpozdeni_while)

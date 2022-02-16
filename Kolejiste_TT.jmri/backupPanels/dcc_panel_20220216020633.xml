@@ -1336,7 +1336,7 @@
       <systemName>IM:AUTO:0003</systemName>
       <userName>dir_sobotin</userName>
     </memory>
-    <memory value="5456">
+    <memory>
       <systemName>IM:AUTO:0004</systemName>
       <userName>dir_zabreh</userName>
     </memory>
@@ -1358,7 +1358,7 @@
     <memory>
       <systemName>IM:AUTO:0010</systemName>
     </memory>
-    <memory value="14:06">
+    <memory value="13:52">
       <systemName>IMCURRENTTIME</systemName>
     </memory>
     <memory value="1.0">
@@ -19897,9 +19897,9 @@
     </operation>
     <operation>
       <type>Store</type>
-      <date>Wed Feb 16 14:06:33 CET 2022</date>
+      <date>Wed Feb 16 13:52:26 CET 2022</date>
       <filename />
     </operation>
   </filehistory>
-  <!--Written by JMRI version 4.99.2+Racb4fb2437 on Wed Feb 16 14:06:33 CET 2022-->
+  <!--Written by JMRI version 4.99.2+Racb4fb2437 on Wed Feb 16 13:52:26 CET 2022-->
 </layout-config>
