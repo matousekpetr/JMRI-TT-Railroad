@@ -2,4 +2,5 @@
 /log/*
 /preferences/*
 /systemfiles/*
+/Kolejiste_TT.jmri/backupPanels/*
 *.bak
