@@ -14,6 +14,11 @@ z3_petrov = memories.provideMemory("z3_petrov")
 dir_sobotin = memories.provideMemory("dir_sobotin")
 dir_zabreh = memories.provideMemory("dir_zabreh")
 
+z5_petrov.value = False
+z3_petrov.value = False
+dir_sobotin.value = 0
+dir_zabreh.value = 0
+
 default_enable = sensors.provideSensor("IS8")
 zabreh_kriz = sensors.provideSensor("IS9")
 

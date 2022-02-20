@@ -286,11 +286,11 @@ class dcc_basic_routes(dcc_basic_methods):
 
     def zabreh_sobotin_zabreh(self, kusa_odjezd, kusa_vjezd, odj_z, vj_z, outOfDeadTrack, track):
 
-        while(dir_sobotin > 1 or track == True):
+        while(dir_sobotin.value > 1 or track == True):
             self.waitMsec(zpozdeni_while)
 
         track = True
-        dir_sobotin = dir_sobotin + 1
+        dir_sobotin.value = dir_sobotin.value + 1
 
         if(outOfDeadTrack == True):
             kusa_odjezd()
@@ -303,7 +303,7 @@ class dcc_basic_routes(dcc_basic_methods):
         self.sobotin_1_vj()
         self.sobotin_1_odj()
         self.petrov_1_vj_s()
-        dir_sobotin = dir_sobotin - 1
+        dir_sobotin.value = dir_sobotin.value - 1
         while(track == True):
             self.waitMsec(zpozdeni_while)
         track = True
@@ -438,7 +438,7 @@ class dcc_automated_routes(dcc_basic_routes):
     def petrov_s_z(self): self.trackSelect(     [14, 13],   [self.petrov_1_vj_s, self.petrov_2_vj_s],                       [self.petrov_1_odj_z, self.petrov_2_odj_z])
     def petrov_z_s(self): self.trackSelect(     [13, 14],   [self.petrov_2_vj_z, self.petrov_1_vj_z],                       [self.petrov_2_odj_s, self.petrov_1_odj_s])
 
-    def zabreh5ak_sobotin_zabreh5ak(self):  self.zabreh_sobotin_zabreh(self.zabreh_5ak_odj, self.zabreh_5ak_vj, self.zabreh_5_odj_c, self.zabreh_5_vj_c, True, zabreh_5)
-    def zabreh5bk_sobotin_zabreh5bk(self):  self.zabreh_sobotin_zabreh(self.zabreh_5bk_odj, self.zabreh_5bk_vj, self.zabreh_5_odj_c, self.zabreh_5_vj_c, True, zabreh_5)
-    def zabreh5_sobotin_zabreh5(self):      self.zabreh_sobotin_zabreh(self.zabreh_5bk_odj, self.zabreh_5bk_vj, self.zabreh_5_odj_c, self.zabreh_5_vj_c, False, zabreh_5)
-    def zabreh3_sobotin_zabreh3(self):      self.zabreh_sobotin_zabreh(self.zabreh_5bk_odj, self.zabreh_5bk_vj, self.zabreh_3_odj_c, self.zabreh_3_vj_c, False, zabreh_3)
+    def zabreh5ak_sobotin_zabreh5ak(self):  self.zabreh_sobotin_zabreh(self.zabreh_5ak_odj, self.zabreh_5ak_vj, self.zabreh_5_odj_c, self.zabreh_5_vj_c, True, z5_petrov)
+    def zabreh5bk_sobotin_zabreh5bk(self):  self.zabreh_sobotin_zabreh(self.zabreh_5bk_odj, self.zabreh_5bk_vj, self.zabreh_5_odj_c, self.zabreh_5_vj_c, True, z5_petrov)
+    def zabreh5_sobotin_zabreh5(self):      self.zabreh_sobotin_zabreh(self.zabreh_5bk_odj, self.zabreh_5bk_vj, self.zabreh_5_odj_c, self.zabreh_5_vj_c, False, z5_petrov)
+    def zabreh3_sobotin_zabreh3(self):      self.zabreh_sobotin_zabreh(self.zabreh_5bk_odj, self.zabreh_5bk_vj, self.zabreh_3_odj_c, self.zabreh_3_vj_c, False, z3_petrov)
