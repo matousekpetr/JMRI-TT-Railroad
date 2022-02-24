@@ -286,36 +286,56 @@ class dcc_basic_routes(dcc_basic_methods):
 
     def zabreh_sobotin_zabreh(self, kusa_odjezd, kusa_vjezd, odj_z, vj_z, outOfDeadTrack, track):
 
-        while(dir_sobotin.value > 1 or track == True):
+        while(dir_sobotin.value > 1 or track.value == True):
             self.waitMsec(zpozdeni_while)
 
-        track = True
+        track.value = True
         dir_sobotin.value = dir_sobotin.value + 1
 
         if(outOfDeadTrack == True):
             kusa_odjezd()
 
         odj_z()
-        track = False
+        track.value = False
 
         self.petrov_2_vj_z()
         self.petrov_2_odj_s()
         self.sobotin_1_vj()
         self.sobotin_1_odj()
+        dir_zabreh.value = dir_zabreh.value + 1
         self.petrov_1_vj_s()
         dir_sobotin.value = dir_sobotin.value - 1
-        while(track == True):
+        while(track.value == True):
             self.waitMsec(zpozdeni_while)
-        track = True
+        track.value = True
 
         self.petrov_1_odj_z()
         vj_z()
         
         if(outOfDeadTrack == True):
             kusa_vjezd()
+        dir_zabreh.value = dir_zabreh.value - 1
+        track.value = False
 
-        track = False        
+    def sobotin_zabreh_sobotin(self):
 
+        self.sobotin_1_odj()
+        dir_zabreh.value = dir_zabreh.value + 1
+        self.petrov_1_vj_s()
+        self.petrov_1_odj_z()
+        dir_zabreh.value = dir_zabreh.value - 1
+        self.trackSelect(  
+        [   6, 7],  
+        [   self.zabreh_3_vj_c, 
+            self.zabreh_5_vj_c],   
+            
+        [   self.zabreh_3_odj_c, 
+            self.zabreh_5_odj_c])
+        dir_sobotin.value = dir_sobotin.value + 1
+        self.petrov_2_vj_z()
+        self.petrov_2_odj_s()
+        self.sobotin_1_vj()
+        dir_sobotin.value = dir_sobotin.value - 1
 
 # Trida pro vyber volnych koleji na konkretnich usecich s postupnou prioritou, nadstavba dcc_basic_routes
 class dcc_automated_routes(dcc_basic_routes):

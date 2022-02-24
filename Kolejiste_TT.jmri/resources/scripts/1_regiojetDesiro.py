@@ -57,8 +57,8 @@ class regiojet(dcc_automated_routes) :
 
             self.sobotin_1_odj()
             self.petrov_s_z()
-            self.zabreh_5_vj_c()
-            self.zabreh_5_odj_c()
+            self.zabreh_3_vj_c()
+            self.zabreh_3_odj_c()
             self.petrov_z_s()
             self.sobotin_1_vj()
 

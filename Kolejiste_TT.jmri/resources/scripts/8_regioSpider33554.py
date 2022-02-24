@@ -5,9 +5,9 @@ class regiospider2(dcc_automated_routes) :
     
     def init(self):
 
-        self.rychlost_stanice = 0.15
-        self.rychlost_jizda = 0.25
-        self.rychlost_koridor = 0.3
+        self.rychlost_stanice = 0.75
+        self.rychlost_jizda = 0.9
+        self.rychlost_koridor = 0.95
         self.smer = False
         self.priority = 1
 
