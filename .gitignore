@@ -2,5 +2,10 @@
 /log/*
 /preferences/*
 /systemfiles/*
+/jmrihelp/*
 /Kolejiste_TT.jmri/backupPanels/*
 *.bak
+JMRI_InitPreferences.properties
+PanelProConfig2.properties
+nodeIdentity.xml
+profiles.xml
