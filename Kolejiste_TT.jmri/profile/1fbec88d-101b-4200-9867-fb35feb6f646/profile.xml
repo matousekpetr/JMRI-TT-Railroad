@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<auxiliary-configuration xmlns="http://www.netbeans.org/ns/auxiliary-configuration/1">
+    <connections xmlns="http://jmri.org/xml/schema/auxiliary-configuration/connections-2-9-6.xsd">
+        <connection xmlns="" class="jmri.jmrix.lenz.li100f.configurexml.ConnectionConfigXml" disabled="no" manufacturer="Lenz" port="ttyUSB0" reconnectMaxAttempts="100" reconnectMaxInterval="120" speed="9600" systemPrefix="X" turnoutInterval="500" userName="XpressNet">
+            <options>
+                <option>
+                    <name>FlowControl</name>
+                    <value>bez řízení přenosu</value>
+                </option>
+            </options>
+        </connection>
+    </connections>
+</auxiliary-configuration>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <auxiliary-configuration xmlns="http://www.netbeans.org/ns/auxiliary-configuration/1">
     <connections xmlns="http://jmri.org/xml/schema/auxiliary-configuration/connections-2-9-6.xsd">
-        <connection xmlns="" class="jmri.jmrix.lenz.li100f.configurexml.ConnectionConfigXml" disabled="no" manufacturer="Lenz" port="COM4" reconnectMaxAttempts="100" reconnectMaxInterval="120" speed="9600" systemPrefix="X" turnoutInterval="250" userName="XpressNet">
+        <connection xmlns="" class="jmri.jmrix.lenz.li100f.configurexml.ConnectionConfigXml" disabled="no" manufacturer="Lenz" port="ttyUSB0" reconnectMaxAttempts="100" reconnectMaxInterval="120" speed="9600" systemPrefix="X" turnoutInterval="500" userName="XpressNet">
             <options>
                 <option>
                     <name>FlowControl</name>
@@ -18,5 +18,8 @@
             <property name="systemPrefix" value=""/>
         </perform>
         <perform xmlns="" class="jmri.util.startup.configurexml.PerformScriptModelXml" name="preference:resources/scripts/autoblok.py" type="ScriptFile"/>
+        <perform xmlns="" class="jmri.util.startup.configurexml.PerformActionModelXml" name="jmri.web.server.WebServerAction" type="Action">
+            <property name="systemPrefix" value=""/>
+        </perform>
     </startup>
 </auxiliary-configuration>
