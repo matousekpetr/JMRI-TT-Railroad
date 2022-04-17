@@ -14,15 +14,15 @@ class regiojet_vectron(dcc_automated_routes) :
 
         self.zh_b_1 = 5000
         self.zh_b_2 = 5000
-        self.zh_b_3 = 5000
+        self.zh_b_3 = 4000
         
         self.hz_a_1 = 5000
         self.hz_a_2 = 5000
         self.hz_a_3 = 5000
 
-        self.h2wait = 7000
-        self.h4wait = 8000
-        self.z4wait = 9000
+        self.h2wait = 6300
+        self.h4wait = 7300
+        self.z4wait = 8000
     
         self.adresa = 7
         self.sensor_1 = "IS58"

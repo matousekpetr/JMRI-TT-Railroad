@@ -15,15 +15,15 @@ class regiospider2(dcc_automated_routes) :
         self.sensor_1 = "IS70"
         self.sensor_2 = "IS71"
 
-        self.sobotin_wait = 2400
+        self.sobotin_wait = 3400
         self.s2akwait = 1000
         
-        self.petrov1_zabreh_wait = 1500
-        self.petrov2_zabreh_wait = 2000
-        self.petrov1_sobotin_wait = 1700
-        self.petrov2_sobotin_wait = 1400
+        self.petrov1_zabreh_wait = 2300
+        self.petrov2_zabreh_wait = 2600
+        self.petrov1_sobotin_wait = 2500
+        self.petrov2_sobotin_wait = 2200
 
-        self.petrov_zabreh_wait = 10000
+        self.petrov_zabreh_wait = 20000
 
         self.zh_a_1 = 3000
         self.zh_a_2 = 3000

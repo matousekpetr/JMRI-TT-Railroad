@@ -28,7 +28,7 @@ class cd_842(dcc_automated_routes) :
         self.z2wait = 8000
         self.z3wait = 8000
         self.z4wait = 7000
-        self.z5wait = 5900
+        self.z5wait = 6500
         self.z5bkwait = 2100
 
         self.h1wait = 1500
