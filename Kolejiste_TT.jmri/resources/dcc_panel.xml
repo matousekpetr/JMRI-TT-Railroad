@@ -2,9 +2,9 @@
 <?xml-stylesheet href="/xml/XSLT/panelfile-4-19-2.xsl" type="text/xsl"?>
 <layout-config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://jmri.org/xml/schema/layout-4-19-2.xsd">
   <jmriversion>
-    <major>4</major>
-    <minor>99</minor>
-    <test>3</test>
+    <major>5</major>
+    <minor>1</minor>
+    <test>1</test>
     <modifier />
   </jmriversion>
   <sensors class="jmri.jmrix.lenz.configurexml.XNetSensorManagerXml">
@@ -1332,7 +1332,7 @@
       <systemName>IM:AUTO:0002</systemName>
       <userName>z5_petrov</userName>
     </memory>
-    <memory value="1">
+    <memory value="0">
       <systemName>IM:AUTO:0003</systemName>
       <userName>dir_sobotin</userName>
     </memory>
@@ -1358,7 +1358,7 @@
     <memory>
       <systemName>IM:AUTO:0010</systemName>
     </memory>
-    <memory value="15:48">
+    <memory value="22:15">
       <systemName>IMCURRENTTIME</systemName>
     </memory>
     <memory value="1.0">
@@ -6785,6 +6785,158 @@
             <sensorState>active</sensorState>
           </sensor>
         </sensors>
+      </destinationMast>
+    </signalmastlogic>
+    <signalmastlogic source="Nav-AB-A">
+      <sourceSignalMast>Nav-AB-A</sourceSignalMast>
+      <destinationMast destination="Nav-AB-B">
+        <destinationSignalMast>Nav-AB-B</destinationSignalMast>
+        <comment />
+        <enabled>yes</enabled>
+        <allowAutoMaticSignalMastGeneration>no</allowAutoMaticSignalMastGeneration>
+        <useLayoutEditor>no</useLayoutEditor>
+        <useLayoutEditorTurnouts>no</useLayoutEditorTurnouts>
+        <useLayoutEditorBlocks>no</useLayoutEditorBlocks>
+        <lockTurnouts>no</lockTurnouts>
+        <blocks>
+          <block>
+            <blockName>B32</blockName>
+            <blockState>unoccupied</blockState>
+          </block>
+        </blocks>
+      </destinationMast>
+    </signalmastlogic>
+    <signalmastlogic source="Nav-AB-B">
+      <sourceSignalMast>Nav-AB-B</sourceSignalMast>
+      <destinationMast destination="Nav-3-E">
+        <destinationSignalMast>Nav-3-E</destinationSignalMast>
+        <comment />
+        <enabled>yes</enabled>
+        <allowAutoMaticSignalMastGeneration>no</allowAutoMaticSignalMastGeneration>
+        <useLayoutEditor>no</useLayoutEditor>
+        <useLayoutEditorTurnouts>no</useLayoutEditorTurnouts>
+        <useLayoutEditorBlocks>no</useLayoutEditorBlocks>
+        <lockTurnouts>no</lockTurnouts>
+        <blocks>
+          <block>
+            <blockName>B30</blockName>
+            <blockState>unoccupied</blockState>
+          </block>
+        </blocks>
+      </destinationMast>
+    </signalmastlogic>
+    <signalmastlogic source="Nav-AB-C">
+      <sourceSignalMast>Nav-AB-C</sourceSignalMast>
+      <destinationMast destination="Nav-AB-D">
+        <destinationSignalMast>Nav-AB-D</destinationSignalMast>
+        <comment />
+        <enabled>yes</enabled>
+        <allowAutoMaticSignalMastGeneration>no</allowAutoMaticSignalMastGeneration>
+        <useLayoutEditor>no</useLayoutEditor>
+        <useLayoutEditorTurnouts>no</useLayoutEditorTurnouts>
+        <useLayoutEditorBlocks>no</useLayoutEditorBlocks>
+        <lockTurnouts>no</lockTurnouts>
+        <blocks>
+          <block>
+            <blockName>B31</blockName>
+            <blockState>unoccupied</blockState>
+          </block>
+        </blocks>
+      </destinationMast>
+    </signalmastlogic>
+    <signalmastlogic source="Nav-AB-D">
+      <sourceSignalMast>Nav-AB-D</sourceSignalMast>
+      <destinationMast destination="Nav-3-B">
+        <destinationSignalMast>Nav-3-B</destinationSignalMast>
+        <comment />
+        <enabled>yes</enabled>
+        <allowAutoMaticSignalMastGeneration>no</allowAutoMaticSignalMastGeneration>
+        <useLayoutEditor>no</useLayoutEditor>
+        <useLayoutEditorTurnouts>no</useLayoutEditorTurnouts>
+        <useLayoutEditorBlocks>no</useLayoutEditorBlocks>
+        <lockTurnouts>no</lockTurnouts>
+        <blocks>
+          <block>
+            <blockName>B01</blockName>
+            <blockState>unoccupied</blockState>
+          </block>
+        </blocks>
+      </destinationMast>
+    </signalmastlogic>
+    <signalmastlogic source="Nav-AB-E">
+      <sourceSignalMast>Nav-AB-E</sourceSignalMast>
+      <destinationMast destination="Nav-AB-F">
+        <destinationSignalMast>Nav-AB-F</destinationSignalMast>
+        <comment />
+        <enabled>yes</enabled>
+        <allowAutoMaticSignalMastGeneration>no</allowAutoMaticSignalMastGeneration>
+        <useLayoutEditor>no</useLayoutEditor>
+        <useLayoutEditorTurnouts>no</useLayoutEditorTurnouts>
+        <useLayoutEditorBlocks>no</useLayoutEditorBlocks>
+        <lockTurnouts>no</lockTurnouts>
+        <blocks>
+          <block>
+            <blockName>B23</blockName>
+            <blockState>unoccupied</blockState>
+          </block>
+        </blocks>
+      </destinationMast>
+    </signalmastlogic>
+    <signalmastlogic source="Nav-AB-F">
+      <sourceSignalMast>Nav-AB-F</sourceSignalMast>
+      <destinationMast destination="Nav-3-C">
+        <destinationSignalMast>Nav-3-C</destinationSignalMast>
+        <comment />
+        <enabled>yes</enabled>
+        <allowAutoMaticSignalMastGeneration>no</allowAutoMaticSignalMastGeneration>
+        <useLayoutEditor>no</useLayoutEditor>
+        <useLayoutEditorTurnouts>no</useLayoutEditorTurnouts>
+        <useLayoutEditorBlocks>no</useLayoutEditorBlocks>
+        <lockTurnouts>no</lockTurnouts>
+        <blocks>
+          <block>
+            <blockName>B26</blockName>
+            <blockState>unoccupied</blockState>
+          </block>
+        </blocks>
+      </destinationMast>
+    </signalmastlogic>
+    <signalmastlogic source="Nav-AB-G">
+      <sourceSignalMast>Nav-AB-G</sourceSignalMast>
+      <destinationMast destination="Nav-AB-H">
+        <destinationSignalMast>Nav-AB-H</destinationSignalMast>
+        <comment />
+        <enabled>yes</enabled>
+        <allowAutoMaticSignalMastGeneration>no</allowAutoMaticSignalMastGeneration>
+        <useLayoutEditor>no</useLayoutEditor>
+        <useLayoutEditorTurnouts>no</useLayoutEditorTurnouts>
+        <useLayoutEditorBlocks>no</useLayoutEditorBlocks>
+        <lockTurnouts>no</lockTurnouts>
+        <blocks>
+          <block>
+            <blockName>B24</blockName>
+            <blockState>unoccupied</blockState>
+          </block>
+        </blocks>
+      </destinationMast>
+    </signalmastlogic>
+    <signalmastlogic source="Nav-AB-H">
+      <sourceSignalMast>Nav-AB-H</sourceSignalMast>
+      <destinationMast destination="Nav-3-H">
+        <destinationSignalMast>Nav-3-H</destinationSignalMast>
+        <comment />
+        <enabled>yes</enabled>
+        <allowAutoMaticSignalMastGeneration>no</allowAutoMaticSignalMastGeneration>
+        <useLayoutEditor>no</useLayoutEditor>
+        <useLayoutEditorTurnouts>no</useLayoutEditorTurnouts>
+        <useLayoutEditorBlocks>no</useLayoutEditorBlocks>
+        <lockTurnouts>no</lockTurnouts>
+        <blocks>
+          <block>
+            <blockName>B27</blockName>
+            <blockState>unoccupied</blockState>
+          </block>
+        </blocks>
       </destinationMast>
     </signalmastlogic>
     <signalmastlogic source="Nav-3-B">
@@ -19687,7 +19839,7 @@
     <signalmasticon signalmast="Nav-AB-C" x="1006" y="725" level="9" forcecontroloff="false" hidden="no" positionable="false" showtooltip="true" editable="true" degrees="270" clickmode="0" litmode="false" scale="0.8" imageset="default" class="jmri.jmrit.display.configurexml.SignalMastIconXml" />
     <signalmasticon signalmast="Nav-AB-D" x="862" y="725" level="9" forcecontroloff="false" hidden="no" positionable="false" showtooltip="true" editable="true" degrees="270" clickmode="0" litmode="false" scale="0.8" imageset="AŽD žzčbz" class="jmri.jmrit.display.configurexml.SignalMastIconXml" />
     <signalmasticon signalmast="Nav-AB-E" x="1547" y="810" level="9" forcecontroloff="false" hidden="no" positionable="false" showtooltip="true" editable="true" degrees="90" clickmode="0" litmode="false" scale="0.8" imageset="default" class="jmri.jmrit.display.configurexml.SignalMastIconXml" />
-    <signalmasticon signalmast="Nav-AB-F" x="1685" y="811" level="9" forcecontroloff="false" hidden="no" positionable="false" showtooltip="true" editable="true" degrees="90" clickmode="0" litmode="false" scale="0.8" imageset="default" class="jmri.jmrit.display.configurexml.SignalMastIconXml" />
+    <signalmasticon signalmast="Nav-AB-F" x="1685" y="811" level="9" forcecontroloff="false" hidden="no" positionable="false" showtooltip="true" editable="true" degrees="90" clickmode="0" litmode="true" scale="0.8" imageset="default" class="jmri.jmrit.display.configurexml.SignalMastIconXml" />
     <signalmasticon signalmast="Nav-AB-G" x="1548" y="726" level="9" forcecontroloff="false" hidden="no" positionable="false" showtooltip="true" editable="true" degrees="270" clickmode="0" litmode="false" scale="0.8" imageset="default" class="jmri.jmrit.display.configurexml.SignalMastIconXml" />
     <signalmasticon signalmast="Nav-AB-H" x="1404" y="726" level="9" forcecontroloff="false" hidden="no" positionable="false" showtooltip="true" editable="true" degrees="270" clickmode="0" litmode="false" scale="0.8" imageset="default" class="jmri.jmrit.display.configurexml.SignalMastIconXml" />
     <sensoricon sensor="IS2" x="224" y="649" level="10" forcecontroloff="false" hidden="no" positionable="false" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
@@ -19802,104 +19954,104 @@
   <filehistory>
     <operation>
       <type>app</type>
-      <date>Sun Feb 20 15:26:59 CET 2022</date>
+      <date>Sun Jun 26 22:08:14 CEST 2022</date>
       <filename>JMRI program</filename>
     </operation>
     <operation>
       <type>Load OK</type>
-      <date>Sun Feb 20 15:29:11 CET 2022</date>
+      <date>Sun Jun 26 22:08:31 CEST 2022</date>
       <filename>/C:/Users/Petr/JMRI/Kolejiste_TT.jmri/resources/dcc_panel.xml</filename>
       <filehistory>
         <operation>
           <type>app</type>
-          <date>Wed Feb 16 13:42:53 CET 2022</date>
+          <date>Sun Feb 20 15:26:59 CET 2022</date>
           <filename>JMRI program</filename>
         </operation>
         <operation>
           <type>Load OK</type>
-          <date>Wed Feb 16 13:44:48 CET 2022</date>
+          <date>Sun Feb 20 15:29:11 CET 2022</date>
           <filename>/C:/Users/Petr/JMRI/Kolejiste_TT.jmri/resources/dcc_panel.xml</filename>
           <filehistory>
             <operation>
               <type>app</type>
-              <date>Sun Feb 06 21:47:30 CET 2022</date>
+              <date>Wed Feb 16 13:42:53 CET 2022</date>
               <filename>JMRI program</filename>
             </operation>
             <operation>
               <type>Load OK</type>
-              <date>Sun Feb 06 21:49:30 CET 2022</date>
+              <date>Wed Feb 16 13:44:48 CET 2022</date>
               <filename>/C:/Users/Petr/JMRI/Kolejiste_TT.jmri/resources/dcc_panel.xml</filename>
               <filehistory>
                 <operation>
                   <type>app</type>
-                  <date>Fri Feb 04 22:52:35 CET 2022</date>
+                  <date>Sun Feb 06 21:47:30 CET 2022</date>
                   <filename>JMRI program</filename>
                 </operation>
                 <operation>
                   <type>Load OK</type>
-                  <date>Fri Feb 04 22:53:28 CET 2022</date>
+                  <date>Sun Feb 06 21:49:30 CET 2022</date>
                   <filename>/C:/Users/Petr/JMRI/Kolejiste_TT.jmri/resources/dcc_panel.xml</filename>
                   <filehistory>
                     <operation>
                       <type>app</type>
-                      <date>Fri Feb 04 22:44:35 CET 2022</date>
+                      <date>Fri Feb 04 22:52:35 CET 2022</date>
                       <filename>JMRI program</filename>
                     </operation>
                     <operation>
                       <type>Load OK</type>
-                      <date>Fri Feb 04 22:44:52 CET 2022</date>
-                      <filename>/C:/Users/Petr/JMRI/Kolejiste_TT.jmri/ovladaci_panel.xml</filename>
+                      <date>Fri Feb 04 22:53:28 CET 2022</date>
+                      <filename>/C:/Users/Petr/JMRI/Kolejiste_TT.jmri/resources/dcc_panel.xml</filename>
                       <filehistory>
                         <operation>
                           <type>app</type>
-                          <date>Fri Feb 04 13:34:08 CET 2022</date>
+                          <date>Fri Feb 04 22:44:35 CET 2022</date>
                           <filename>JMRI program</filename>
                         </operation>
                         <operation>
                           <type>Load OK</type>
-                          <date>Fri Feb 04 13:37:37 CET 2022</date>
+                          <date>Fri Feb 04 22:44:52 CET 2022</date>
                           <filename>/C:/Users/Petr/JMRI/Kolejiste_TT.jmri/ovladaci_panel.xml</filename>
                         </operation>
                         <operation>
                           <type>Store</type>
-                          <date>Fri Feb 04 14:01:53 CET 2022</date>
+                          <date>Fri Feb 04 22:51:37 CET 2022</date>
                           <filename />
                         </operation>
                       </filehistory>
                     </operation>
                     <operation>
                       <type>Store</type>
-                      <date>Fri Feb 04 22:51:37 CET 2022</date>
+                      <date>Fri Feb 04 22:55:59 CET 2022</date>
                       <filename />
                     </operation>
                   </filehistory>
                 </operation>
                 <operation>
                   <type>Store</type>
-                  <date>Fri Feb 04 22:55:59 CET 2022</date>
+                  <date>Sun Feb 06 21:50:06 CET 2022</date>
                   <filename />
                 </operation>
               </filehistory>
             </operation>
             <operation>
               <type>Store</type>
-              <date>Sun Feb 06 21:50:06 CET 2022</date>
+              <date>Wed Feb 16 14:06:33 CET 2022</date>
               <filename />
             </operation>
           </filehistory>
         </operation>
         <operation>
           <type>Store</type>
-          <date>Wed Feb 16 14:06:33 CET 2022</date>
+          <date>Sun Feb 20 15:48:33 CET 2022</date>
           <filename />
         </operation>
       </filehistory>
     </operation>
     <operation>
       <type>Store</type>
-      <date>Sun Feb 20 15:48:33 CET 2022</date>
+      <date>Sun Jun 26 22:15:43 CEST 2022</date>
       <filename />
     </operation>
   </filehistory>
-  <!--Written by JMRI version 4.99.3+R41d54e97f6 on Sun Feb 20 15:48:33 CET 2022-->
+  <!--Written by JMRI version 5.1.1+Redc443cff0 on Sun Jun 26 22:15:43 CEST 2022-->
 </layout-config>

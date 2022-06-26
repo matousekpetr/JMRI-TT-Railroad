@@ -275,3 +275,6 @@ for i in range(len(ABS)):
 
 for i in range(len(DIR_STOP)):
        DIR_STOP[i].setKnownState(ACTIVE)       
+
+for i in range(len(XS)):
+       XS[i].setKnownState(INACTIVE)     

@@ -269,21 +269,6 @@ class dcc_basic_routes(dcc_basic_methods):
     def sobotin_2ak_vj(self): self.trainIn([21, 20], [CLOSED, CLOSED], [20, 21], 13, True, self.sobotin2ak_wait)
     def sobotin_2bk_vj(self): self.trainIn([21, 20], [THROWN, CLOSED], [20, 22], 13, True, self.sobotin2bk_wait)
 
- # Autoblok navestidla
-
-    def autoblock_signals(self):  
-        self.signal_logic(32, ABS[1], ABS[2])
-        self.signal_logic(30, ABS[2], NAV[37])
-        
-        self.signal_logic(31, ABS[3], ABS[4])
-        self.signal_logic(1, ABS[4], NAV[33])
-
-        self.signal_logic(23, ABS[5], ABS[6])
-        self.signal_logic(26, ABS[6], NAV[39])
-
-        self.signal_logic(24, ABS[7], ABS[8])
-        self.signal_logic(27, ABS[8], NAV[4])
-
     def zabreh_sobotin_zabreh(self, kusa_odjezd, kusa_vjezd, odj_z, vj_z, outOfDeadTrack, track):
 
         while(dir_sobotin.value > 1 or track.value == True):
