@@ -25,7 +25,7 @@ class brejlovec_najbrt(dcc_automated_routes) :
         self.hz_b_3 = 5000
 
         self.h1wait = 5500
-        self.z3wait = 6200
+        self.z3wait = 6400
         
         self.throttle = self.getThrottle(self.adresa, False)
         

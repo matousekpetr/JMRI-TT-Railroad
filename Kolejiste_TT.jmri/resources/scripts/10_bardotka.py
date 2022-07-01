@@ -19,12 +19,12 @@ class bardotka(dcc_automated_routes):
         self.hz_b_2 = 6000
         self.hz_b_3 = 6000
 
-        self.h3wait = 4400
+        self.h3wait = 4600
         self.z1wait = 8500
         self.z2wait = 5500        
-        self.z3wait = 5500
+        self.z3wait = 6000
         self.z4wait = 4500         
-        self.z5wait = 1500
+        self.z5wait = 1700
        
         self.adresa = 10
         self.sensor_1 = "IS64"

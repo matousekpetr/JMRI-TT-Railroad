@@ -1160,6 +1160,54 @@
       <systemName>XT226</systemName>
       <userName>S6</userName>
     </turnout>
+    <turnout feedback="MONITORING" inverted="false" automate="Off">
+      <systemName>XT257</systemName>
+    </turnout>
+    <turnout feedback="MONITORING" inverted="false" automate="Off">
+      <systemName>XT258</systemName>
+    </turnout>
+    <turnout feedback="MONITORING" inverted="false" automate="Off">
+      <systemName>XT259</systemName>
+    </turnout>
+    <turnout feedback="MONITORING" inverted="false" automate="Off">
+      <systemName>XT260</systemName>
+    </turnout>
+    <turnout feedback="MONITORING" inverted="false" automate="Off">
+      <systemName>XT261</systemName>
+    </turnout>
+    <turnout feedback="MONITORING" inverted="false" automate="Off">
+      <systemName>XT262</systemName>
+    </turnout>
+    <turnout feedback="MONITORING" inverted="false" automate="Off">
+      <systemName>XT263</systemName>
+    </turnout>
+    <turnout feedback="MONITORING" inverted="false" automate="Off">
+      <systemName>XT264</systemName>
+    </turnout>
+    <turnout feedback="MONITORING" inverted="false" automate="Off">
+      <systemName>XT265</systemName>
+    </turnout>
+    <turnout feedback="MONITORING" inverted="false" automate="Off">
+      <systemName>XT266</systemName>
+    </turnout>
+    <turnout feedback="MONITORING" inverted="false" automate="Off">
+      <systemName>XT267</systemName>
+    </turnout>
+    <turnout feedback="MONITORING" inverted="false" automate="Off">
+      <systemName>XT268</systemName>
+    </turnout>
+    <turnout feedback="MONITORING" inverted="false" automate="Off">
+      <systemName>XT271</systemName>
+    </turnout>
+    <turnout feedback="MONITORING" inverted="false" automate="Off">
+      <systemName>XT272</systemName>
+    </turnout>
+    <turnout feedback="MONITORING" inverted="false" automate="Off">
+      <systemName>XT273</systemName>
+    </turnout>
+    <turnout feedback="MONITORING" inverted="false" automate="Off">
+      <systemName>XT274</systemName>
+    </turnout>
   </turnouts>
   <reporters class="jmri.jmrix.internal.configurexml.InternalReporterManagerXml">
     <reporter>
@@ -1358,7 +1406,7 @@
     <memory>
       <systemName>IM:AUTO:0010</systemName>
     </memory>
-    <memory value="22:15">
+    <memory value="17:39">
       <systemName>IMCURRENTTIME</systemName>
     </memory>
     <memory value="1.0">
@@ -6425,10 +6473,6 @@
         <useLayoutEditorBlocks>no</useLayoutEditorBlocks>
         <lockTurnouts>no</lockTurnouts>
         <blocks>
-          <block>
-            <blockName>B03</blockName>
-            <blockState>unoccupied</blockState>
-          </block>
           <block>
             <blockName>B28</blockName>
             <blockState>unoccupied</blockState>
@@ -19954,104 +19998,104 @@
   <filehistory>
     <operation>
       <type>app</type>
-      <date>Sun Jun 26 22:08:14 CEST 2022</date>
+      <date>Fri Jul 01 17:25:31 CEST 2022</date>
       <filename>JMRI program</filename>
     </operation>
     <operation>
       <type>Load OK</type>
-      <date>Sun Jun 26 22:08:31 CEST 2022</date>
-      <filename>/C:/Users/Petr/JMRI/Kolejiste_TT.jmri/resources/dcc_panel.xml</filename>
+      <date>Fri Jul 01 17:26:02 CEST 2022</date>
+      <filename>/C:/Users/Radoslav/JMRI/Kolejiste_TT.jmri/resources/dcc_panel.xml</filename>
       <filehistory>
         <operation>
           <type>app</type>
-          <date>Sun Feb 20 15:26:59 CET 2022</date>
+          <date>Sun Jun 26 22:08:14 CEST 2022</date>
           <filename>JMRI program</filename>
         </operation>
         <operation>
           <type>Load OK</type>
-          <date>Sun Feb 20 15:29:11 CET 2022</date>
+          <date>Sun Jun 26 22:08:31 CEST 2022</date>
           <filename>/C:/Users/Petr/JMRI/Kolejiste_TT.jmri/resources/dcc_panel.xml</filename>
           <filehistory>
             <operation>
               <type>app</type>
-              <date>Wed Feb 16 13:42:53 CET 2022</date>
+              <date>Sun Feb 20 15:26:59 CET 2022</date>
               <filename>JMRI program</filename>
             </operation>
             <operation>
               <type>Load OK</type>
-              <date>Wed Feb 16 13:44:48 CET 2022</date>
+              <date>Sun Feb 20 15:29:11 CET 2022</date>
               <filename>/C:/Users/Petr/JMRI/Kolejiste_TT.jmri/resources/dcc_panel.xml</filename>
               <filehistory>
                 <operation>
                   <type>app</type>
-                  <date>Sun Feb 06 21:47:30 CET 2022</date>
+                  <date>Wed Feb 16 13:42:53 CET 2022</date>
                   <filename>JMRI program</filename>
                 </operation>
                 <operation>
                   <type>Load OK</type>
-                  <date>Sun Feb 06 21:49:30 CET 2022</date>
+                  <date>Wed Feb 16 13:44:48 CET 2022</date>
                   <filename>/C:/Users/Petr/JMRI/Kolejiste_TT.jmri/resources/dcc_panel.xml</filename>
                   <filehistory>
                     <operation>
                       <type>app</type>
-                      <date>Fri Feb 04 22:52:35 CET 2022</date>
+                      <date>Sun Feb 06 21:47:30 CET 2022</date>
                       <filename>JMRI program</filename>
                     </operation>
                     <operation>
                       <type>Load OK</type>
-                      <date>Fri Feb 04 22:53:28 CET 2022</date>
+                      <date>Sun Feb 06 21:49:30 CET 2022</date>
                       <filename>/C:/Users/Petr/JMRI/Kolejiste_TT.jmri/resources/dcc_panel.xml</filename>
                       <filehistory>
                         <operation>
                           <type>app</type>
-                          <date>Fri Feb 04 22:44:35 CET 2022</date>
+                          <date>Fri Feb 04 22:52:35 CET 2022</date>
                           <filename>JMRI program</filename>
                         </operation>
                         <operation>
                           <type>Load OK</type>
-                          <date>Fri Feb 04 22:44:52 CET 2022</date>
-                          <filename>/C:/Users/Petr/JMRI/Kolejiste_TT.jmri/ovladaci_panel.xml</filename>
+                          <date>Fri Feb 04 22:53:28 CET 2022</date>
+                          <filename>/C:/Users/Petr/JMRI/Kolejiste_TT.jmri/resources/dcc_panel.xml</filename>
                         </operation>
                         <operation>
                           <type>Store</type>
-                          <date>Fri Feb 04 22:51:37 CET 2022</date>
+                          <date>Fri Feb 04 22:55:59 CET 2022</date>
                           <filename />
                         </operation>
                       </filehistory>
                     </operation>
                     <operation>
                       <type>Store</type>
-                      <date>Fri Feb 04 22:55:59 CET 2022</date>
+                      <date>Sun Feb 06 21:50:06 CET 2022</date>
                       <filename />
                     </operation>
                   </filehistory>
                 </operation>
                 <operation>
                   <type>Store</type>
-                  <date>Sun Feb 06 21:50:06 CET 2022</date>
+                  <date>Wed Feb 16 14:06:33 CET 2022</date>
                   <filename />
                 </operation>
               </filehistory>
             </operation>
             <operation>
               <type>Store</type>
-              <date>Wed Feb 16 14:06:33 CET 2022</date>
+              <date>Sun Feb 20 15:48:33 CET 2022</date>
               <filename />
             </operation>
           </filehistory>
         </operation>
         <operation>
           <type>Store</type>
-          <date>Sun Feb 20 15:48:33 CET 2022</date>
+          <date>Sun Jun 26 22:15:43 CEST 2022</date>
           <filename />
         </operation>
       </filehistory>
     </operation>
     <operation>
       <type>Store</type>
-      <date>Sun Jun 26 22:15:43 CEST 2022</date>
+      <date>Fri Jul 01 17:39:21 CEST 2022</date>
       <filename />
     </operation>
   </filehistory>
-  <!--Written by JMRI version 5.1.1+Redc443cff0 on Sun Jun 26 22:15:43 CEST 2022-->
+  <!--Written by JMRI version 5.1.1+Redc443cff0 on Fri Jul 01 17:39:21 CEST 2022-->
 </layout-config>
